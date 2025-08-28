@@ -1,5 +1,14 @@
 on: 
   workflow_dispatch: 
+    inputs: 
+      enviroment:
+        description: "choose enviroment"
+        required: true
+        default: "stagin"
+        type: choice
+        options: 
+          - stagin
+          - production
 
 
 jobs:
